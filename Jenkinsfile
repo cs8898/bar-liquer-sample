@@ -1,6 +1,7 @@
 pipeline {
-  agent any
-
+  agent {
+   docker { image 'adoptopenjdk/openjdk16' }
+  }
   stages {
     stage('Test') {
       steps {
