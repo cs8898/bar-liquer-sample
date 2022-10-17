@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh './mvnw clean package'
         archiveArtifacts artifacts: \
-            './target/*-runner.jar'
+            'target/*-runner.jar'
       }
     }
   }
